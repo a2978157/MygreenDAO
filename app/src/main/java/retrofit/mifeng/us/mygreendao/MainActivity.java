@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.cha:
                 //查
+               /* StudentMsgBean load = msgBeanDao.load(1l);//通过id直接查询
+                load.getName();*/
                 list = msgBeanDao.queryBuilder()
                         .build()
                         .list();
